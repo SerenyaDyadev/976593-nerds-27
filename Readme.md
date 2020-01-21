@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Сереня Дядьев](https://up.htmlacademy.ru/htmlcss/27/user/976593).
-* Наставник: `Неизвестно`.
+- Студент: [Сереня Дядьев](https://up.htmlacademy.ru/htmlcss/27/user/976593).
+- Наставник: [Александр Лесухин](https://htmlacademy.ru/profile/id181931).
 
 ---
 
