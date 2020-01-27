@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Студия дизайна NЁRDS</title>
+</head>
 
-  </body>
+<body>
+  <header>
+    <nav class="container menu">
+      <a class="logo">
+        <img src="img/header/logo/logo.svg" alt="Nerds logo" height="65" width="160" />
+      </a>
+      <ul class="menu-list">
+        <li><a href="#">студия</a></li>
+        <li><a href="#">клиенты</a></li>
+        <li><a href="catalog.html">магазин</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+      <a class="cart" href="#"><img src="img/header/cart-icon.png" alt="корзина" width="15" height="15" />корзина</a>
+    </nav>
+    <section class="container slider">
+      <p>
+        Долго, дорого, скрупулезно.
+      </p>
+      <p>Математически выверенный дизайн для вашего сайта или мобильног</p>
+
+      <img src="img/header/sliders/slider1.png" alt="Слайдер 1">
+    </section>
+  </header>
+  <main class="container">
+    <h1 class="visually-hidden">Студия дизайна NЁRDS</h1>
+    <section class="feauters">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="feauters-list">
+        <li class="feauters-item">
+          <!-- <img src="img/main/illustration-1.jpg" width="300" height="146" alt="Веб-сайты"> -->
+          <img src="https://via.placeholder.com/300x146" alt="Веб-сайты">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="button button-red" href="#">Заказать</a>
+        </li>
+        <li class="feauters-item">
+          <!-- <img src="img/main/illustration-2.jpg" width="300" height="146" alt="Веб-сайты"> -->
+          <img src="https://via.placeholder.com/300x146" alt="Веб-сайты">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button button-green" href="#">Заказать</a>
+        </li>
+        <li class="feauters-item">
+          <!-- <img src="img/main/illustration-3.jpg" width="300" height="146" alt="Веб-сайты"> -->
+          <img src="https://via.placeholder.com/300x146" alt="Веб-сайты">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете,
+            насколько вы изумительны!</p>
+          <a class="button button-orange" href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <section class="about-us">
+      <h2 class="visually-hidden"> О нас </h2>
+      <div class="about-us-text">
+        <b>Мы — маленькая, но гордая
+          дизайн-студия из Краснодара.</b>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="about-us-history">
+        <!-- <img src="img/main/nerds-illustration.jpg" width="360" height="208" alt="Логотип"> -->
+        <img src="https://via.placeholder.com/360x208" alt="Логотип">
+        <b>с 2004 года Любим точность во всем:</b>
+        <ul>
+          <li>
+            <b>146 <span>%</span></b>
+            <p>Уровень
+              самоотдачи</p>
+          </li>
+          <li>
+            <b>100<span>%</span></b>
+            <p>Соблюдение
+              сроков</p>
+          </li>
+          <li>
+            <b>50<span>%</span></b>
+            <p>Минимальная
+              предоплата</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="brands">
+      <h2 class="visually-hidden">Кто с нами работает</h2>
+      <ul>
+        <li><a href="#"><img src="https://via.placeholder.com/199x68" alt="HtmlAcademy"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/199x68" alt="Borodinski"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/199x68" alt="PINK"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/199x68" alt="Mishka"></a></li>
+        <!-- <li><a href="#"><img src="img/main/brands/brand-1.svg" width="199" height="68" alt="HtmlAcademy"></a></li>
+        <li><a href="#"><img src="img/main/brands/brand-2.svg" width="199" height="68" alt="Borodinski"></a></li>
+        <li><a href="#"><img src="img/main/brands/brand-3.svg" width="199" height="68" alt="PINK"></a></li>
+        <li><a href="#"><img src="img/main/brands/brand-4.svg" width="199" height="68" alt="Mishka"></a></li> -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <section class="maps">
+      <img class="maps-img" src="img/footer/maps.jpg" width="1440" height="416" alt="карта">
+      <div class="maps-contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8 </p>
+
+        <p>тел. +7 (812) 275-75-75</p>
+      </div>
+      <img class="maps-marker" src="img/footer/map-marker.png" alt="Маркер на карте">
+    </section>
+    <section class="footer">
+      <ul class="footer-social">
+        <li> <a class="social-button" href="#">Vkontakte</a></li>
+        <li> <a class="social-button" href="#">Facebook</a></li>
+        <li> <a class="social-button" href="#">Instagramm</a></li>
+      </ul>
+      <div class="footer-slogan">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
