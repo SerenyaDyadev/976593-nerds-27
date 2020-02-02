@@ -18,7 +18,7 @@
         <li><a href="catalog.html">магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
-      <a class="cart" href="#">корзина</a>
+      <a class="button cart" href="#">корзина</a>
     </nav>
   </header>
   <main class="container">
@@ -94,18 +94,21 @@
         <ul>
           <li>
             <b>146 <sup>%</sup></b>
-            <p>Уровень
-              самоотдачи</p>
+            <p>
+              Уровень самоотдачи
+            </p>
           </li>
           <li>
             <b>100<sup>%</sup></b>
-            <p>Соблюдение
-              сроков</p>
+            <p>
+              Соблюдение сроков
+            </p>
           </li>
           <li>
             <b>50<sup>%</sup></b>
-            <p>Минимальная
-              предоплата</p>
+            <p>
+              Минимальная предоплата
+            </p>
           </li>
         </ul>
       </div>
@@ -147,6 +150,24 @@
   </footer>
   <section class="modal-write-us">
     <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-email-name">
+        <label class="form-name">
+          Ваше имя:
+          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+        </label>
+        <label class="form-email">
+          Ваш e-mail:
+          <input type="email" name="email" value="" placeholder="email@example.com">
+        </label>
+      </p>
+      <p class="form-mail">
+        <label for="form-mail-area"> Текст письма: </label>
+        <textarea id="form-mail-area" cols="50" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button сlass="button" type="submit"> Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
   </section>
 </body>
 

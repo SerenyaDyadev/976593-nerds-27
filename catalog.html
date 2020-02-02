@@ -25,40 +25,95 @@
         <h1 class="catalog-titel">Магазин готовых шаблонов</h1>
         <aside class="product-filter">
             <h2 class="visually-hidden"> Фильр товаров</h2>
-            <p class="product-filter-cost">Стоимость:</p>
-            <span>от</span> <span>до</span>
-            <p class="product-filter-grid">Сетка:</p>
-            <ul class="product-filter-grid-list">
-                <li>Адаптивная</li>
-                <li>Фиксированная</li>
-                <li>Резиновая</li>
-            </ul>
-            <p class="product-filter-features">Сетка:</p>
-            <ul class="product-filter-features-list">
-                <li>Слайдер</li>
-                <li>Блок преимуществ</li>
-                <li>Новости</li>
-                <li>Галерея</li>
-                <li>Корзина</li>
-            </ul>
-            <!-- кнопка ниже -->
-            <a href="">Показать</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>
+                        Стоимость:
+                    </legend>
+                    <p class="form-catalog-range">
+                        <input type="range" min="0" max="20000" value="15000">
+                        <input type="range" min="0" max="20000" value="0">
+                    </p>
+                    <p>
+                        <label for="form-catalog-range-begin">
+                            от
+                            <input type="number" value="" placeholder="0">
+                        </label>
+                        <label for="form-catalog-range-pending">
+                            до
+                            <input type="number" value="" max="20000" placeholder="15000">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul class="form-grid-list">
+                        <li class="form-grid-item">
+                            <input type="radio" name="form-grid-radio" value="adaptive" id="adaptive-radio">
+                            <label for="adaptive-radio">Адаптивная</label>
+                        </li>
+                        <li class="form-grid-item">
+                            <input type="radio" name="form-grid-radio" value="fixing" id="fixing-radio">
+                            <label for="fixing-radio">Фиксированная</label>
+                        </li>
+                        <li class="form-grid-item">
+                            <input type="radio" name="form-grid-radio" value="rubber" id="rubber-radio">
+                            <label for="rubber-radio">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul class="form-feature-list">
+                        <li class="form-feature-item">
+                            <input type="checkbox" name="slider" id="filter-slider" checked>
+                            <label for="filter-slider">Слайдер</label>
+                        </li>
+                        <li class="form-feature-item">
+                            <input type="checkbox" name="block-fetures" id="filter-block-fetures">
+                            <label for="filter-block-fetures">Блок преимуществ</label>
+                        </li>
+                        <li class="form-feature-item">
+                            <input type="checkbox" name="news" id="filter-news" checked>
+                            <label for="filter-news">Новости</label>
+                        </li>
+                        <li class="form-feature-item">
+                            <input type="checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li class="form-feature-item">
+                            <input type="checkbox" name="cart" id="filter-cart">
+                            <label for="filter-cart">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="button button-filter" type="button">Показать</button>
+            </form>
         </aside>
         <section class="products-list">
             <h2 class="visually-hidden">Список шаблонов</h2>
-            <p class="products-list-sort">Сортировать:</p>
-            <ul class="products-list-sort-item">
-                <li class="products-list-sort-item-current">По цене </li>
-                <li><a href=""> По типу</a></li>
-                <li><a href="">По названию</a></li>
-                <li><a href="">По возрастанию</a></li>
-                <li><a href="">По убыванию</a></li>
+            <h3>Сортировать:</h3>
+            <ul class="form-sort-list">
+                <li class="form-sort-item-current">
+                    <a href="" class="button-sort-current">По цене</a>
+                </li>
+                <li class="form-sort-item">
+                    <a href="" class="button-sort">По типу</a>
+                </li>
+                <li class="form-sort-item">
+                    <a href="" class="button-sort">По названию</a>
+                </li>
+                <li class="form-sort-item">
+                    <a href="" class="button-sort button-arrow-down">По убыванию</a>
+                </li>
+                <li class="form-sort-item">
+                    <a href="" class="button-sort button-arrow-up button-arrow-up-current">По возрастанию</a>
+                </li>
             </ul>
-
             <ul class="products-list-item">
                 <li>
                     <!-- <img class="" src="img/browser.png" width="360" alt="Шапка">  из css-->
-                    <img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
+                    <a href=""><img src="img/img-sedona.jpg" width="360" height="576" alt="Седона"></a>
                     <section class="modal-product-active">
                         <a class="title-modal">Sedona</a>
                         <p>Информационный сайт для туристов</p>
@@ -66,52 +121,50 @@
                     </section>
                 </li>
                 <li>
-                    <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
-                    <section class="modal-product-active">
-                        <a class="title-modal">Pink App</a>
-                        <p>Продуктовый лендинг
-                            приложения для iOS и Android</p>
-                        <a>9900 Руб.</a>
-                    </section>
+                    <a href=""><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+                        <section class="modal-product-active">
+                            <a class="title-modal">Pink App</a>
+                            <p>Продуктовый лендинг
+                                приложения для iOS и Android</p>
+                            <a>9900 Руб.</a>
+                        </section>
                 </li>
                 <li>
 
-                    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп">
-                    <section class="modal-product-active">
-                        <a class="title-modal">Barbershop</a>
-                        <p>Сайт салона красоты.
-                            Для мужчин, да.</p>
-                        <a>9900 Руб.</a>
-                    </section>
+                    <a href=""><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп">
+                        <section class="modal-product-active">
+                            <a class="title-modal">Barbershop</a>
+                            <p>Сайт салона красоты.
+                                Для мужчин, да.</p>
+                            <a>9900 Руб.</a>
+                        </section>
                 </li>
                 <li>
-                    <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
-                    <section class="modal-product-active">
-                        <a class="title-modal">Mishka</a>
-                        <p>Интернет-магазин
-                            вязаных игрушек</p>
-                        <a>9900 Руб.</a>
-                    </section>
+                    <a href=""><img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
+                        <section class="modal-product-active">
+                            <a class="title-modal">Mishka</a>
+                            <p>Интернет-магазин
+                                вязаных игрушек</p>
+                            <a>9900 Руб.</a>
+                        </section>
                 </li>
                 <li>
-                    <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-                    <section class="modal-product-active">
-                        <a class="title-modal">A Plus</a>
-                        <p>Лендинг курсов повышения квалификации</p>
-                        <a>9900 Руб.</a>
-                    </section>
+                    <a href=""><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+                        <section class="modal-product-active">
+                            <a class="title-modal">A Plus</a>
+                            <p>Лендинг курсов повышения квалификации</p>
+                            <a>9900 Руб.</a>
+                        </section>
                 </li>
                 <li>
-                    <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-                    <section class="modal-product-active">
-                        <a class="title-modal">Кваст</a>
-                        <p>Промо-сайт производителя
-                            крафтового кваса</p>
-                        <a>9900 Руб.</a>
-                    </section>
+                    <a href=""><img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+                        <section class="modal-product-active">
+                            <a class="title-modal">Кваст</a>
+                            <p>Промо-сайт производителя
+                                крафтового кваса</p>
+                            <a>9900 Руб.</a>
+                        </section>
                 </li>
-
-
 
             </ul>
             <ul class="pagination-item-list">
@@ -149,6 +202,24 @@
     </footer>
     <section class="modal-write-us">
         <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-email-name">
+                <label class="form-name">
+                    Ваше имя:
+                    <input type="text" name="name" value="" placeholder="Имя Фамилия">
+                </label>
+                <label class="form-email">
+                    Ваш e-mail:
+                    <input type="email" name="email" value="" placeholder="email@example.com">
+                </label>
+            </p>
+            <p class="form-mail">
+                <label for="form-mail-area"> Текст письма: </label>
+                <textarea id="form-mail-area" cols="50" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+            <button сlass="button" type="submit"> Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
     </section>
 </body>
 
