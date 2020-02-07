@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+.modal{
+    /* display: none */
+}
+.modal-write-us h2{
+font-size: 45px;
+line-height: 45px;
+}
+.modal-write-us label{
+font-weight: 700;
+line-height: 18px;
+text-transform: none;
+}
+.modal-write-us input,
+.modal-write-us textarea{
+border: 2px solid #d7dcde;
+}
+.modal-write-us input:hover,
+.modal-write-us textarea:hover{
+border-color: #b4b9bb;
+}
+.modal-write-us input:focus,
+.modal-write-us input:active,
+.modal-write-us textarea:focus,
+.modal-write-us textarea:active{
+border-color:#000000;
+}
+.
+
+.form-name-email input::placeholder,
+.form-name-email textarea::placeholder,
+.form-name-email input:valid::placeholder{
+    opacity: 0.5;
+    color: #444444;
+}
+.modal-write-us input:active::placeholder,
+.modal-write-us input:focus::placeholder,
+.modal-write-us textarea:active::placeholder,
+.modal-write-us textarea:focus::placeholder{
+opacity: 1;
+}
+
+.form-name-email input:invalid{
+border-color: #e74246;
+}
+.form-name-email input:invalid::placeholder{
+color: #e74246;
+} 
+
+.menu{
+    background-color: #eee;
+}
+.menu-list{
+    list-style: none;
+}
+
+.menu a{
+color:inherit;
+}
+
+.menu a:hover,
+.menu a:focus{
+    color: #fb565a;
+}
+
+.menu a:active{
+    opacity: 0.3;
+}
+.active-item {
+    border-bottom: 2px solid #fb565a;
+}
+
+.logo img:hover,
+.logo img:focus{
+    opacity: 0.8;
+}
+.logo img:active{
+    opacity: 0.3;
+}
+
+.button,
+.button-red{
+color: #ffffff;
+background-color: #fb565a;
+}
+.button:focus,
+.button:hover{
+    background-color: #e74246;
+}
+.button:active{
+    opacity: 0.3;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+.button-green {
+    background-color: #00ca74;
+}
+.button-green:focus,
+.button-green:hover {
+    background-color: #00bc6c;
+} 
+.button-green:active{
+    opacity:0.3;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #00aa62;
+}
+.button-yellow {
+    background-color: #efc84a;
+}
+.button-yellow:focus,
+.button-yellow:hover {
+    background-color: #eab534;
+} 
+.button-yellow:active{
+    opacity:0.3;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #e5a722;  
+}
+.button-filter {
+    color: #000000;
+    background-color: #eee;
+}
+.button-filter:focus,
+.button-filter:hover {
+    background-color: #dfdfdf;
+}
+
+.button-filter:active {
+    
+    opacity: 0.3;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.write-us-button {
+    color: #fff;
+}
+
+.display-none-slider{
+    display: none;
+}
+.slider-list{
+    list-style: none;
+    line-height: 18px;
+    background-color: #eee;
+}
+
+.slider-title{
+font-size: 55px;
+line-height: 55px;
+}
+
+.slider-about{
+color: #283136;
+font-weight: 400;
+line-height: 24px;
+text-transform: none;
+}
+
+.feauters-list {
+    list-style: none;
+}
+
+.feauters-item h3 {
+font-size: 24px;
+font-weight: 700;
+}
+
+.feauters-item p{
+color: #283136;
+font-weight: 400;
+line-height: 24px;
+text-transform: none;
+}
+
+.about-us-text h3{
+font-size: 45px;
+line-height: 45px;
+text-transform: none;
+}
+
+.about-us-text p{
+
+color: #283136;
+font-weight: 400;
+text-transform: none;
+}
+.about-us-text h4{
+font-size: 16px;
+font-weight: 700;
+}
+.about-us-text ul{
+    list-style: none;
+}
+
+.about-us-text li{
+color: #283136;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-transform: none;
+}
+
+.about-us-statistics {
+    text-align: center;
+}
+
+.about-us-statistics h3 {
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+}
+.about-us-statistics ul{
+    list-style: none;
+}
+
+.about-us-statistics b{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 10.06px;
+}
+
+.about-us-statistics p{
+color: #283136;
+font-weight: 400;
+line-height: 18px;
+text-transform: none;
+}
+
+.brands-list {
+    list-style: none;
+}
+
+.brands-list img{
+    opacity: 0.2;
+}
+
+.brands-list img:focus,
+.brands-list img:hover{
+    opacity:1;
+}
+.brands-list img:active{
+    opacity:0.1;
+}
+
+
+.catalog-titel{
+font-size: 55px;
+line-height: 55px;
+
+background-color: #eee;
+
+text-align: center;
+}
+.product-filter fieldset{
+    border: none;
+}
+.product-filter legend {
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+}
+
+.form-catalog-range{
+    background-color:#eee ;
+}
+.range-begin-end input::placeholder {
+    color: #283136;
+}
+
+input[type="number"]{
+    background-color: #eee;
+    border:none
+}
+.product-filter ul,
+.sort-list {
+    list-style: none;
+}
+.product-filter li{
+color: #283136;
+font-weight: 400;
+line-height: 20px;
+text-transform: none;
+}
+.form-grid-item:hover,
+.form-grid-item:focus{
+   /* Менем кружок чекбокса */
+}
+
+.form-grid-item:active,
+.form-feature-item:active{
+        opacity: 0.3;
+    }
+
+
+.button-sort{
+opacity: 0.3;
+color: #000000;
+
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+}
+
+.button-sort:hover,
+.button-sort:focus{
+opacity: 0.6;
+}
+.button-sort:active{
+opacity: 1;
+}
+.button-sort-current {
+    opacity: 1;
+}
+
+.products ul {
+ list-style: none;
+}
+.modal-product-active{
+    background-color: #eee;
+}
+.title-modal{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  
+}
+.products-list-item p{
+    color: #666666;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+}
+
+.pagination-item{
+color: #000000;
+font-size: 16px;
+line-height: 18px;
+background-color: #eee;
+}
+.pagination-item:hover,
+.pagination-item:focus{
+background-color: #dfdfdf;
+}
+.pagination-item:active{
+opacity: 0.3;
+box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+background-color: #d5d5d5;
+}
+.pagination-item-current{
+background:none;
+border:1px solid #eee;
+}
+.map-contacts h3{
+font-size: 18px;
+font-weight: 700;
+}
+.map-contacts p{
+color: #666666;
+font-weight: 400;
+line-height: 18px;
+text-transform: none;
+}
+.telephone{
+    color:  #666666;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-slogan b{
+font-size: 36px;
+font-weight: 700;
+line-height: 36px;
+}
+.footer-slogan p{
+color: #444444;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}
+

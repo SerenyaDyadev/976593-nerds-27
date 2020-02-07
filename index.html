@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Студия дизайна NЁRDS</title>
 </head>
 
@@ -13,12 +16,12 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo" />
       </a>
       <ul class="menu-list">
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="#">контакты</a></li>
+        <li class="menu-item active-item"><a href="#">студия</a></li>
+        <li class="menu-item"><a href="#">клиенты</a></li>
+        <li class="menu-item"><a href="catalog.html">магазин</a></li>
+        <li class="menu-item"><a href="#">контакты</a></li>
       </ul>
-      <a class="button cart" href="#">корзина</a>
+      <a class="cart-button" href="#">корзина</a>
     </nav>
   </header>
   <main class="container">
@@ -28,19 +31,19 @@
         <p class="slider-title">Долго, дорого, скрупулезно.</p>
         <p class="slider-about">Никакого креатива, только математические формулы
           для расчета идеальных пропорций.</p>
-        <a href="#">Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
         <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
       </li>
-      <li class="slider-item">
-        <p class="slider-title">Любим математику как никто другой</p>
+      <li class="slider-item display-none-slider">
+        <p class="slider-title ">Любим математику как никто другой</p>
         <p class="slider-about">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a href="#">Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
         <img src="img/slide2.png" width="698" height="413" alt="Слайдер 2">
       </li>
-      <li class="slider-item">
+      <li class="slider-item display-none-slider">
         <p class="slider-title"> Только ночь, только хардкор </p>
         <p class="slider-about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="#">Узнать больше</a>
+        <a class="button button-slider" href="#">Узнать больше</a>
         <img src="img/slide3.png" width="698" height="413" alt="Слайдер 3">
       </li>
     </ul>
@@ -64,27 +67,27 @@
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете,
             насколько вы изумительны!</p>
-          <a class="button button-orange" href="#">Заказать</a>
+          <a class="button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="about-us">
       <h2 class="visually-hidden"> О нас </h2>
       <div class="about-us-text">
-        <b>Мы — маленькая, но гордая
-          дизайн-студия из Краснодара.</b>
+        <h3>Мы — маленькая, но гордая
+          дизайн-студия из Краснодара.</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
+        <h4>Выполняем заказы на разработку:</h4>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div class="about-us-history">
+      <div class="about-us-statistics">
         <img src="img/logo-color.jpg" width="360" height="208" alt="Логотип">
-        <b>с 2004 года Любим точность во всем:</b>
+        <h3>с 2004 года Любим точность во всем:</h3>
         <ul>
           <li>
             <b>146 <sup>%</sup></b>
@@ -107,15 +110,14 @@
         </ul>
       </div>
     </section>
-    <section class="brands">
-      <h2 class="visually-hidden">Кто с нами работает</h2>
-      <ul>
-        <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy"></a></li>
-        <li><a href="#"><img src="img/logo-2.png" width="199" height="68" alt="Borodinski"></a></li>
-        <li><a href="#"><img src="img/logo-3.png" width="199" height="68" alt="PINK"></a></li>
-        <li><a href="#"><img src="img/logo-4.png" width="199" height="68" alt="Mishka"></a></li>
-      </ul>
-    </section>
+    <ul class="brands-list">
+      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68"
+            alt="HtmlAcademy"></a></li>
+      <li><a href="#"><img src="img/logo-2.png" width="199" height="68" alt="Borodinski"></a></li>
+      <li><a href="#"><img src="img/logo-3.png" width="199" height="68" alt="PINK"></a></li>
+      <li><a href="#"><img src="img/logo-4.png" width="199" height="68" alt="Mishka"></a></li>
+    </ul>
+
   </main>
 
   <footer>
@@ -126,8 +128,9 @@
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8 </p>
-
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="button" href="#">Напишите нам</a>
+        <button сlass="button write-us-button" type="submit">Отправить</button>
       </div>
       <img class="map-marker" src="img/map-marker.png" alt="Маркер на карте">
     </section>
@@ -142,28 +145,29 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
+
     </section>
   </footer>
-  <section class="modal-write-us">
+  <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-email-name">
+      <p class="form-name-email">
         <label class="form-name">
           Ваше имя:
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
         </label>
         <label class="form-email">
           Ваш e-mail:
-          <input type="email" name="email" value="" placeholder="email@example.com">
+          <input type="email" name="email" value="" placeholder="email@example.com" required>
         </label>
       </p>
       <p class="form-mail">
         <label for="form-mail-area"> Текст письма: </label>
         <textarea id="form-mail-area" cols="50" rows="5" placeholder="В свободной форме"></textarea>
       </p>
-      <button сlass="form-button" type="submit">Отправить</button>
+      <button class="button write-us-button" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="button-close" type="button">Закрыть</button>
   </section>
 </body>
 
