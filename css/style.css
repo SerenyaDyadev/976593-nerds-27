@@ -24,10 +24,10 @@ a{
     margin: 0 auto;
     width: 1160px;
 }
-
+/* 
 .modal{
-    /* display: none */
-}
+    /* display: none 
+} */
 .modal-write-us h2{
 font-size: 45px;
 line-height: 45px;
@@ -51,7 +51,7 @@ border-color: #b4b9bb;
 .modal-write-us textarea:active{
 border-color:#000000;
 }
-.
+
 
 .form-name-email input::placeholder,
 .form-name-email textarea::placeholder,
@@ -348,10 +348,10 @@ font-weight: 400;
 line-height: 20px;
 text-transform: none;
 }
-.form-grid-item:hover,
+/* .form-grid-item:hover,
 .form-grid-item:focus{
-   /* Менем кружок чекбокса */
-}
+   /* Менем кружок чекбокса 
+} */
 
 .form-grid-item:active,
 .form-feature-item:active{
