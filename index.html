@@ -10,40 +10,49 @@
 </head>
 
 <body>
-  <header>
-    <nav class="container menu">
-      <a class="logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo" />
-      </a>
-      <ul class="menu-list">
-        <li class="menu-item active-item"><a href="#">студия</a></li>
-        <li class="menu-item"><a href="#">клиенты</a></li>
-        <li class="menu-item"><a href="catalog.html">магазин</a></li>
-        <li class="menu-item"><a href="#">контакты</a></li>
-      </ul>
-      <a class="cart-button" href="#">корзина</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <a class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo" />
+        </a>
+        <ul class="menu-list">
+          <li class="menu-item"><a class="active-item" href="#">студия</a></li>
+          <li class="menu-item"><a href="#">клиенты</a></li>
+          <li class="menu-item"><a href="catalog.html">магазин</a></li>
+          <li class="menu-item"><a href="#">контакты</a></li>
+        </ul>
+        <a class="cart-button" href="#">корзина</a>
+      </nav>
+    </div>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Студия дизайна NЁRDS</h1>
     <ul class="slider-list">
       <li class="slider-item">
-        <p class="slider-title">Долго, дорого, скрупулезно.</p>
-        <p class="slider-about">Никакого креатива, только математические формулы
-          для расчета идеальных пропорций.</p>
-        <a class="button button-slider" href="#">Узнать больше</a>
+        <div class="slider-wrapper">
+          <p class="slider-title">Долго, дорого, скурпулезно.</p>
+          <p class="slider-about">Никакого креатива, только математические формулы
+            для расчета идеальных пропорций.</p>
+          <a class="button button-slider" href="#">Узнать больше</a>
+        </div>
         <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
       </li>
       <li class="slider-item display-none-slider">
-        <p class="slider-title ">Любим математику как никто другой</p>
-        <p class="slider-about">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="button button-slider" href="#">Узнать больше</a>
+        <div class="slider-wrapper">
+          <p class="slider-title ">Любим математику как никто другой</p>
+          <p class="slider-about">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="button button-slider" href="#">Узнать больше</a>
+        </div>
         <img src="img/slide2.png" width="698" height="413" alt="Слайдер 2">
       </li>
       <li class="slider-item display-none-slider">
-        <p class="slider-title"> Только ночь, только хардкор </p>
-        <p class="slider-about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a class="button button-slider" href="#">Узнать больше</a>
+        <div class="slider-wrapper">
+          <p class="slider-title"> Только ночь, только хардкор </p>
+          <p class="slider-about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+          </p>
+          <a class="button button-slider" href="#">Узнать больше</a>
+        </div>
         <img src="img/slide3.png" width="698" height="413" alt="Слайдер 3">
       </li>
     </ul>
