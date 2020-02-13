@@ -17,7 +17,7 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo" />
         </a>
         <ul class="menu-list">
-          <li class="menu-item"><a class="active-item" href="#">студия</a></li>
+          <li class="menu-item"><a href="#">студия</a></li>
           <li class="menu-item"><a href="#">клиенты</a></li>
           <li class="menu-item"><a href="catalog.html">магазин</a></li>
           <li class="menu-item"><a href="#">контакты</a></li>
@@ -31,14 +31,14 @@
       <h1 class="visually-hidden">Студия дизайна NЁRDS</h1>
       <div class="container">
         <ul class="slider-list">
-          <li class="slider-item ">
+          <li class="slider-item">
             <div class="slider-wrapper">
               <p class="slider-title">Долго, дорого, скрупулезно.</p>
               <p class="slider-about">Математически выверенный дизайн </br>
                 для вашего сайта или мобильного приложения.</p>
               <a class="button button-slider" href="#">Узнать больше</a>
             </div>
-            <img class="slider-image" src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
+            <img class="slider-image" src="img/slide1.png" width="698" height="425" alt="Слайдер 1">
           </li>
           <li class="slider-item display-none-slider">
             <div class="slider-wrapper">
@@ -109,43 +109,35 @@
           <div class="about-us-statistics">
             <img src="img/logo-color.jpg" width="360" height="208" alt="Логотип">
             <h3>с 2004 года Любим точность во всем:</h3>
-            <table class="about-us-table">
-              <tr>
-                <th>
-                  146 <sup>%</sup>
-                </th>
-                <th>
-                  100<sup>%</sup>
-                </th>
-                <th>
-                  50<sup>%</sup>
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Уровень самоотдачи
-                </td>
-                <td>
-                  Соблюдение сроков
-                </td>
-                <td>
-                  Минимальная предоплата
-                </td>
-              </tr>
-            </table>
+            <div class="about-us-list-wrapper">
+              <ul class="about-us-statistic-list">
+                <li class="about-us-statistic-item">
+                  <b>146<sup>%</sup></b>
+                  <p>Уровень самоотдачи</p>
+                </li>
+                <li class="about-us-statistic-item">
+                  <b>100<sup>%</sup></b>
+                  <p>Соблюдение сроков</p>
+                </li>
+                <li class="about-us-statistic-item">
+                  <b>50<sup>%</sup></b>
+                  <p>Минимальная предоплата</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
-
-    <ul class="brands-list container">
-      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68"
-            alt="HtmlAcademy"></a></li>
-      <li><a href="#"><img src="img/logo-2.png" width="199" height="68" alt="Borodinski"></a></li>
-      <li><a href="#"><img src="img/logo-3.png" width="199" height="68" alt="PINK"></a></li>
-      <li><a href="#"><img src="img/logo-4.png" width="199" height="68" alt="Mishka"></a></li>
-    </ul>
+    <div class="container">
+      <ul class="brands-list">
+        <li><a class="brands-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199"
+              height="68" alt="HtmlAcademy"></a></li>
+        <li><a class="brands-link" href="#"><img src="img/logo-2.png" width="199" height="70" alt="Borodinski"></a></li>
+        <li><a class="brands-link" href="#"><img src="img/logo-3.png" width="199" height="70" alt="PINK"></a></li>
+        <li><a class="brands-link" href="#"><img src="img/logo-4.png" width="199" height="70" alt="Mishka"></a></li>
+      </ul>
+    </div>
   </main>
 
   <footer>
@@ -178,26 +170,33 @@
       </div>
     </section>
   </footer>
-  <section class="visually-hidden modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-name-email">
-        <label class="form-name">
-          Ваше имя:
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
-        </label>
-        <label class="form-email">
-          Ваш e-mail:
-          <input type="email" name="email" value="" placeholder="email@example.com" required>
-        </label>
-      </p>
-      <p class="form-mail">
-        <label for="form-mail-area"> Текст письма: </label>
-        <textarea id="form-mail-area" cols="50" rows="5" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="button write-us-button" type="submit">Отправить</button>
-    </form>
-    <button class="button-close" type="button">Закрыть</button>
+  <section class="modal container">
+    <div class="modal-write-us">
+      <div class="modal-write-us-wrapper">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-name-email">
+            <p class="form-name-item">
+              <label>
+                Ваше имя: <br>
+              </label>
+              <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
+            </p>
+            <p class="form-email-item">
+              <label>
+                Ваш e-mail:
+              </label>
+              <input type="email" name="email" value="" placeholder="email@example.com" required>
+            </p>
+          </div>
+          <p class="form-mail">
+            <label for="form-mail-area"> Текст письма: </label>
+            <textarea id="form-mail-area" cols="99" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button write-us-button-form" type="submit">Отправить</button>
+        </form>
+        <button class="button-close" type="button">Закрыть</button>
+      </div>
   </section>
 </body>
 
