@@ -17,12 +17,14 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds logo" />
         </a>
         <ul class="menu-list">
-          <li class="menu-item"><a href="#">студия</a></li>
-          <li class="menu-item"><a href="#">клиенты</a></li>
-          <li class="menu-item"><a href="catalog.html">магазин</a></li>
-          <li class="menu-item"><a href="#">контакты</a></li>
+          <li><a href="#">студия</a></li>
+          <li><a href="#">клиенты</a></li>
+          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="#">контакты</a></li>
         </ul>
-        <a class="cart-button" href="#">корзина</a>
+        <ul class="user-menu-list">
+          <li class="cart-button"><a href="#">корзина</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -30,36 +32,47 @@
     <div class="slider-background">
       <h1 class="visually-hidden">Студия дизайна NЁRDS</h1>
       <div class="container">
-        <ul class="slider-list">
-          <li class="slider-item">
-            <div class="slider-wrapper">
-              <p class="slider-title">Долго, дорого, скрупулезно.</p>
-              <p class="slider-about">Математически выверенный дизайн </br>
-                для вашего сайта или мобильного приложения.</p>
-              <a class="button button-slider" href="#">Узнать больше</a>
-            </div>
-            <img class="slider-image" src="img/slide1.png" width="698" height="425" alt="Слайдер 1">
-          </li>
-          <li class="slider-item display-none-slider">
-            <div class="slider-wrapper">
-              <p class="slider-title ">Любим математику как никто другой</p>
-              <p class="slider-about">Никакого креатива, только математические формулы для расчета идеальных пропорций.
-              </p>
-              <a class="button button-slider" href="#">Узнать больше</a>
-            </div>
-            <img class="slider-image" src="img/slide2.png" width="698" height="413" alt="Слайдер 2">
-          </li>
-          <li class="slider-item display-none-slider">
-            <div class="slider-wrapper">
-              <p class="slider-title"> Только ночь, </br>только хардкор </p>
-              <p class="slider-about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
-                начинается.
-              </p>
-              <a class="button button-slider" href="#">Узнать больше</a>
-            </div>
-            <img class="slider-image" src="img/slide3.png" width="698" height="413" alt="Слайдер 3">
-          </li>
-        </ul>
+        <div class="slider-container">
+          <input class="slider-1" type="radio" id="slider-1" name="toggle" checked>
+          <input class="slider-2" type="radio" id="slider-2" name="toggle">
+          <input class="slider-3" type="radio" id="slider-3" name="toggle">
+          <div class="slider-controls">
+            <label for="slider-1"></label>
+            <label for="slider-2"></label>
+            <label for="slider-3"></label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <div class="slider-wrapper">
+                <p class="slider-title">Долго, дорого, скрупулезно.</p>
+                <p class="slider-about">Математически выверенный дизайн </br>
+                  для вашего сайта или мобильного приложения.</p>
+                <a class="button button-slider" href="#">Узнать больше</a>
+              </div>
+              <img class="slider-image" src="img/slide1.png" width="698" height="425" alt="Слайдер 1">
+            </li>
+            <li class="slider-item">
+              <div class="slider-wrapper">
+                <p class="slider-title ">Любим математику</br> как никто другой</p>
+                <p class="slider-about">Никакого креатива, только математические формулы для расчета идеальных
+                  пропорций.
+                </p>
+                <a class="button button-slider" href="#">Узнать больше</a>
+              </div>
+              <img class="slider-image" src="img/slide2.png" width="698" height="413" alt="Слайдер 2">
+            </li>
+            <li class="slider-item">
+              <div class="slider-wrapper">
+                <p class="slider-title"> Только ночь, </br>только хардкор </p>
+                <p class="slider-about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+                  начинается.
+                </p>
+                <a class="button button-slider" href="#">Узнать больше</a>
+              </div>
+              <img class="slider-image" src="img/slide3.png" width="698" height="413" alt="Слайдер 3">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <section class="feauters">
@@ -131,37 +144,39 @@
     </section>
     <div class="container">
       <ul class="brands-list">
-        <li><a class="brands-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199"
-              height="68" alt="HtmlAcademy"></a></li>
-        <li><a class="brands-link" href="#"><img src="img/logo-2.png" width="199" height="70" alt="Borodinski"></a></li>
-        <li><a class="brands-link" href="#"><img src="img/logo-3.png" width="199" height="70" alt="PINK"></a></li>
-        <li><a class="brands-link" href="#"><img src="img/logo-4.png" width="199" height="70" alt="Mishka"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199"
+              alt="HtmlAcademy"></a></li>
+        <li><a href="#"><img src="img/logo-2.png" width="209" alt="Borodinski"></a></li>
+        <li><a href="#"><img src="img/logo-3.png" width="185" alt="PINK"></a></li>
+        <li><a href="#"><img src="img/logo-4.png" width="173" alt="Mishka"></a></li>
+
       </ul>
     </div>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <section class="map">
       <h2 class="visually-hidden">Карта как добраться до нас</h2>
       <div class="map-img">
         <img src="img/map.jpg" width="1440" height="416" alt="карта">
         <div class="map-contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8 </p>
-          <a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a> </br>
-          <a class="button-write-us button" href="#">Напишите нам</a>
+          <div class="map-contacts-wrapper">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>191186, Санкт-Петербург, <br>
+              ул. Б. Конюшенная, д. 19/8 </p>
+            <a class="phone-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a> </br>
+            <a class="button-write-us button" href="#">Напишите нам</a>
+          </div>
         </div>
         <img class="map-marker" src="img/map-marker.png" alt="Маркер на карте">
       </div>
     </section>
     <section class="footer">
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
       <div class="container">
         <ul class="footer-social">
-          <li> <a class="social-button" href="#">Vkontakte</a></li>
-          <li> <a class="social-button" href="#">Facebook</a></li>
-          <li> <a class="social-button" href="#">Instagramm</a></li>
+          <li> <a class="social-button vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li> <a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li> <a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="footer-slogan">
           <b>Давайте дружить, это выгодно!</b>
@@ -169,10 +184,8 @@
         </div>
       </div>
     </section>
-  </footer>
-  <section class="modal container">
-    <div class="modal-write-us">
-      <div class="modal-write-us-wrapper">
+    <section class="modal">
+      <div class="modal-write-us">
         <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form-name-email">
@@ -191,13 +204,14 @@
           </div>
           <p class="form-mail">
             <label for="form-mail-area"> Текст письма: </label>
-            <textarea id="form-mail-area" cols="99" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea id="form-mail-area" cols="93" rows="5" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button write-us-button-form" type="submit">Отправить</button>
         </form>
-        <button class="button-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </div>
-  </section>
+    </section>
+  </footer>
 </body>
 
 </html>
