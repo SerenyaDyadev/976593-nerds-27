@@ -306,11 +306,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-2:checked ~ .slider-list .slider-item {
-  transform: translate(-1128px);
+  transform: translate(-1129px);
 }
 
 .slider-3:checked ~ .slider-list .slider-item {
-  transform: translate(-2256px);
+  transform: translate(-2258px);
 }
 
 .slider-background {
@@ -1047,10 +1047,11 @@ padding-bottom: 8px;
   position:absolute;
   z-index: 1;
   width: 100%;
-  height: 233px;
-  bottom: 0;
+  height: 223px;
+  bottom: 10px;
   background-color: #eee;
 }
+
 .modal-product-active a {
   display: block;
   padding-top: 22px;
@@ -1064,7 +1065,7 @@ padding-bottom: 8px;
 .modal-product-active p {
   display: block;
   margin: 0 auto;
-  width: 180px;
+  width: 250px;
   padding-top: 5px;
   color: #666666;
   font-weight: 400;
@@ -1259,11 +1260,56 @@ padding-bottom: 8px;
   position: relative;
 }
 
-.modal{
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(-100);}
+    40% {transform: translateY(-130px);}
+    60% {transform: translateY(-120px);}
+}
+
+
+@keyframes shake {
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
   display: none;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
+
+.modal-show {
+  display: block;
+   position: absolute;
+   left: 50%;
+  top: -10px;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+   position: absolute;
+   left: 50%;
+  top: -10px;
+  animation: shake 0.6s;
+}
+
 
 .modal-write-us {
   position: absolute;
