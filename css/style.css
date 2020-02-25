@@ -1123,6 +1123,10 @@ padding-bottom: 8px;
   margin: 0;
   padding: 0;
 }
+.map-img iframe {
+  position: absolute;
+}
+
 .map-contacts {
   display: block;
   position: absolute;
@@ -1291,25 +1295,19 @@ padding-bottom: 8px;
 .modal-show {
   display: block;
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 30%;
+  top: 30%;
   z-index: 2;
   animation: bounce 0.6s;
 }
 
 .modal-error {
-  left: 50%;
-  top: -10px;
   animation: shake 0.6s;
 }
-
 
 .modal-write-us {
   position: absolute;
   width: 960px;
-  left: 50%;
-  top: -120px;
-  margin-left: -480px;
   padding:73px 90px 84px 101px;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -1329,6 +1327,14 @@ padding-bottom: 8px;
   text-transform: none;
 }
 
+.modal-write-us input::placeholder {
+  padding-left: 10px;
+}
+
+.modal-write-us textarea::placeholder {
+ padding: 10px;
+}
+
 .form-name-email {
   display: flex;
 }
@@ -1336,7 +1342,6 @@ padding-bottom: 8px;
 .form-name-email input {
   width: 360px;
   padding:15px 0 14px 0;
-  /* height: 50px; */
 }
 
 .form-name-item {
