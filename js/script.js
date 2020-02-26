@@ -4,6 +4,7 @@ var button_close_write_us = document.querySelector(".modal-close");
 var your_name = popup_write_us.querySelector("[name=name]");
 var your_email = popup_write_us.querySelector("[name=email]");
 var form_write_us = popup_write_us.querySelector("form");
+// var sliders = document.querySelector(".slider-list");
 
 var isStorageSupport = true;
 var storage = "";
