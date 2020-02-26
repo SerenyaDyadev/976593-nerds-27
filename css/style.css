@@ -1428,9 +1428,10 @@ padding-bottom: 8px;
 .modal-show {
   display: block;
   position: fixed;
-  left: 30%;
-  top: 30%;
+  left: 50%;
+  top: 50%;
   z-index: 2;
+  transform: translate(-50%, -50%);
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
 }
@@ -1441,7 +1442,7 @@ padding-bottom: 8px;
 }
 
 .modal-write-us {
-  position: absolute;
+  position: relative;
   width: 960px;
   padding:73px 90px 84px 101px;
   background-color: #ffffff;
