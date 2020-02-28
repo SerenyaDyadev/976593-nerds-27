@@ -201,11 +201,8 @@
 
   <footer class="main-footer">
     <section class="map">
-      <h2 class="visually-hidden">Карта как добраться до нас</h2>
-      <div class="map-img">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b1e9c1df3b1b00467c778173bab8bb84dfc09c01b7e9235eb92b0f010366068&amp;source=constructor"></iframe>
-        <img src="img/map.jpg" width="1440" height="416" alt="карта">
+      <div class="container">
+        <h2 class="visually-hidden">Карта как добраться до нас</h2>
         <div class="map-contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург, <br>
@@ -213,7 +210,13 @@
           <a class="phone-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a> <br>
           <a class="button-write-us button" href="#">Напишите нам</a>
         </div>
-        <img class="map-marker" src="img/map-marker.png" alt="Маркер на карте">
+        <div class="map-img">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b1e9c1df3b1b00467c778173bab8bb84dfc09c01b7e9235eb92b0f010366068&amp;source=constructor"></iframe>
+          <img src="img/map.jpg" width="1440" height="416" alt="карта">
+
+          <img class="map-marker" src="img/map-marker.png" alt="Маркер на карте">
+        </div>
       </div>
     </section>
     <section class="footer">
@@ -240,34 +243,32 @@
         </div>
       </div>
     </section>
-    <section class="modal">
-      <div class="modal-write-us">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-name-email">
-            <p class="form-name-item">
-              <label>
-                Ваше имя:
-              </label>
-              <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
-            </p>
-            <p class="form-email-item">
-              <label>
-                Ваш e-mail:
-              </label>
-              <input type="email" name="email" value="" placeholder="email@example.com" required>
-            </p>
-          </div>
-          <p class="form-mail">
-            <label for="form-mail-area"> Текст письма: </label>
-            <textarea id="form-mail-area" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button write-us-button-form" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </div>
-    </section>
   </footer>
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-name-email">
+        <p class="form-name-item">
+          <label>
+            Ваше имя:
+          </label>
+          <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="form-email-item">
+          <label>
+            Ваш e-mail:
+          </label>
+          <input type="email" name="email" value="" placeholder="email@example.com" required>
+        </p>
+      </div>
+      <p class="form-mail">
+        <label for="form-mail-area"> Текст письма: </label>
+        <textarea id="form-mail-area" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button write-us-button-form" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
   <script src="js/script.min.js">
   </script>
 
