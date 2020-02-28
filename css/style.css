@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
  * {
   -webkit-box-sizing: border-box;
@@ -1394,6 +1396,7 @@ padding-bottom: 8px;
   left: 50%;
   top: 50%;
   margin-left: -480px;
+  margin-top: -250px;
   z-index: 3;
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
@@ -1426,43 +1429,7 @@ padding-bottom: 8px;
   text-transform: none;
 }
 
-.modal-write-us input::-webkit-input-placeholder {
-  padding-left: 10px;
-}
-
-.modal-write-us input::-moz-placeholder {
-  padding-left: 10px;
-}
-
-.modal-write-us input:-ms-input-placeholder {
-  padding-left: 10px;
-}
-
-.modal-write-us input::-ms-input-placeholder {
-  padding-left: 10px;
-}
-
-.modal-write-us input::placeholder {
-  padding-left: 10px;
-}
-
-.modal-write-us textarea::-webkit-input-placeholder {
- padding: 10px;
-}
-
-.modal-write-us textarea::-moz-placeholder {
- padding: 10px;
-}
-
-.modal-write-us textarea:-ms-input-placeholder {
- padding: 10px;
-}
-
-.modal-write-us textarea::-ms-input-placeholder {
- padding: 10px;
-}
-
-.modal-write-us textarea::placeholder {
+.modal-write-us textarea {
  padding: 10px;
 }
 
@@ -1474,7 +1441,7 @@ padding-bottom: 8px;
 
 .form-name-email input {
   width: 360px;
-  padding:15px 0 14px 0;
+  padding:15px 10px 14px 10px;
 }
 
 .form-name-item {
