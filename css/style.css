@@ -1044,10 +1044,8 @@ padding-bottom: 8px;
 }
 
 .sort-list{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 300px;
+  width: 310px;
   margin: 0;
   padding: 0;
   margin-top: -2px;
@@ -1067,7 +1065,7 @@ padding-bottom: 8px;
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 38px;
+  margin-left: 20px;
 }
 .arrow-sort-list li{
   padding-right: 18px;
