@@ -1010,8 +1010,14 @@ padding-bottom: 8px;
   margin-left: 39px;
 }
 
-.arrow-sort-list li {
+.sort-item {
+    margin: 0;
+  padding: 0;
   margin-top: -2px;
+}
+
+.sort-item:last-child a{
+  padding-right: 0;
 }
 
 .arrow-down {
