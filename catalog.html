@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Магазин готовых шаблонов</title>
 </head>
 
@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container">
       <nav class="menu">
-        <a class="logo" href="index.html">
+        <a class="logo logo-link" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна NЁRDS" />
         </a>
         <ul class="menu-list">
@@ -37,7 +37,7 @@
     </div>
     <div class="container inner-page">
       <aside class="product-filter">
-        <h2 class="visually-hidden"> Фильр товаров</h2>
+        <h2 class="visually-hidden">Фильр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
@@ -123,15 +123,14 @@
           </ul>
           <ul class="arrow-sort-list">
             <li>
-              <a href="#" class="visually-hidden">По убыванию</a><span
-                class="button-arrow arrow-down button-arrow-current" tabindex="0"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 10L0 0h11" /></svg></span>
+              <a href="#" aria-label="По убыванию"><span class="button-arrow arrow-down button-arrow-current"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11" /></svg></span></a>
             </li>
             <li>
-              <a href="#" class="visually-hidden">По возрастанию</a> <span class="button-arrow arrow-up"
-                tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg></span>
+              <a href="#" aria-label="По возврастанию"><span class="button-arrow arrow-up"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg></span></a>
             </li>
           </ul>
         </div>
@@ -145,7 +144,8 @@
             <section class="modal-product-active">
               <a href="#" class="title-modal">sedona</a>
               <p>Информационный сайт для туристов</p>
-              <button class="button button-product" type="button" tabindex="0">9900 Руб.</button>
+              <button class="button button-product" type="button">9900
+                Руб.</button>
             </section>
           </li>
           <li class="products-list-item" tabindex="0">
@@ -217,11 +217,12 @@
           </li>
         </ul>
         <ul class="pagination-list" role="Навигация" aria-label="Пагинация">
-          <li aria-current="page"> <a class="pagination-item pagination-item-current" aria-label="Текущая страница:"
+          <li aria-current="page"> <a class="pagination-item pagination-item-current" aria-label="Текущая страница: 1"
               aria-current="true">1</a></li>
-          <li> <a class="pagination-item" href="#" aria-label="Перейти на страницу:"> 2</a></li>
-          <li> <a class="pagination-item" href="#" aria-label="Перейти на страницу:"> 3</a></li>
-          <li> <a class="pagination-item pagination-next" href="#" aria-label="Перейти на страницу:">Следующая</a></li>
+          <li> <a class="pagination-item" href="#" aria-label="Перейти на страницу:2"> 2</a></li>
+          <li> <a class="pagination-item" href="#" aria-label="Перейти на страницу:3"> 3</a></li>
+          <li> <a class="pagination-item pagination-next" href="#"
+              aria-label="Перейти на страницу: Следующая">Следующая</a></li>
         </ul>
       </section>
     </div>
