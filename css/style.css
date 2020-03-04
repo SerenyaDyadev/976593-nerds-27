@@ -36,7 +36,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20px
+  /* padding: 0 20px */
 }
 
 .header, .header .container, .slider-background, .slider-background .container {
@@ -1251,13 +1251,7 @@ a {
   min-width: 1200px;
   max-width: 100%;
   top: 0;
-  left: 50%;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%)
 }
 
 .map-image iframe {
@@ -1286,7 +1280,7 @@ a {
   padding-right: 50px;
   padding-bottom: 45px;
   background-color: #fff;
-  z-index: 3
+  z-index: 4
 }
 
 .map-contacts h3 {
